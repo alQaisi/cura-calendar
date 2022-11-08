@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import { ScheduleProvider } from '../context/schedule.context';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ScheduleProvider>
+      <Component {...pageProps} />
+    </ScheduleProvider>
+  );
 }
 
 export default MyApp

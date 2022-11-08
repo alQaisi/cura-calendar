@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap');
+html{
+  font-size: 16px;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,14 +15,27 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Cairo', sans-serif !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button{
+  all: unset;
+  cursor:pointer;
+  font-weight: 700;
+  font-size: 1.067rem;
+  width: 95%;
+  max-width: 357px;
+  text-align: center;
+  background: #4894FE;
+  color: #FFF;
+  padding: 17px 0;
+  border-radius: 14px;
+  pointer-events: none;
+  opacity: .65;
+}
+button.active{
+  pointer-events: initial;
+  opacity: 1;
+}
+button:hover{
+  filter: opacity(.85);
 }
